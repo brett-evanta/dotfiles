@@ -115,15 +115,3 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 
 " Ignore bundler and sass cache
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
-
-""
-"" Backup and swap files
-""
-set backupdir=~/.vim/_backup//    " where to put backup files.
-set directory=~/.vim/_temp//      " where to put swap files.
-
-" allow undo history to persist after closing buffer
-if has('persistent_undo')
-  set undodir=~/.vim/_undo
-  set undofile
-end

@@ -13,7 +13,7 @@ files="vimrc bashrc bash_profile gitconfig gitignore_global tmux.conf hushlogin"
 
 # install Vundle for managing Vim plugins
 echo "Installing Vundle"
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall # install Vundle plugins
 
 # create .dotfiles_old in homedir
