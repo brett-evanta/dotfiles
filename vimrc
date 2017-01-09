@@ -27,8 +27,14 @@ Plugin 'fatih/vim-go'
 " Elixir syntax highlighting
 Plugin 'elixir-lang/vim-elixir'
 
-" Handlebars & Mustache synctax highlighting
+" Handlebars & Mustache syntax highlighting
 Plugin 'mustache/vim-mustache-handlebars'
+
+" CoffeeScript syntax highlighting
+Plugin 'kchmck/vim-coffee-script'
+
+" EJS syntax highlighting
+Plugin 'nikvdp/ejs-syntax'
 
 " send rspec output to tmux
 let g:rspec_command = 'call Send_to_Tmux("bin/rspec {spec}\n")'
