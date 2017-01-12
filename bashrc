@@ -19,6 +19,9 @@ alias tmcp="tmux show-buffer | pbcopy"
 
 alias nombom='npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
 
+# quick server start command
+alias ss="bash server_start.sh"
+
 # move to where my go code is located
 alias gosrc="cd $GOPATH/src/github.com/brett-evanta"
 
