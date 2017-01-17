@@ -45,6 +45,9 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+" Run JS specs
+map <Leader>j :call Send_to_Tmux("bin/rake spec:javascript\n")<CR>
+
 " slim-lang syntax highlighting
 Plugin 'slim-template/vim-slim'
 
