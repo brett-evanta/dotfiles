@@ -36,6 +36,9 @@ Plugin 'kchmck/vim-coffee-script'
 " EJS syntax highlighting
 Plugin 'nikvdp/ejs-syntax'
 
+" Fuzzy file finding
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " send rspec output to tmux
 let g:rspec_command = 'call Send_to_Tmux("bin/rspec {spec}\n")'
 
@@ -124,3 +127,15 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 
 " Ignore bundler and sass cache
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+
+" Ignore tmp, .git, and swap files
+set wildignore+=*/tmp/*,*.so,*.swp,.git
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
